@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.progress-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring circle {
+  fill: none;
+  stroke-width: 10;
+}
+
+.progress-ring .circle-background {
+  stroke: #e5e7eb; /* light gray */
+}
+
+.progress-ring .circle-progress {
+  stroke: #3498db; /* blue */
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.35s stroke-dasharray 0.35s;
+}
+
+.countdown-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#status {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
